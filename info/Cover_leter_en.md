@@ -35,34 +35,12 @@ Docsity’s commitment to meaningful learning and data-powered innovation strong
 
 In addition to my technical expertise, I propose an innovative approach to platform development and educational planning that integrates advanced time management and project control systems with adaptive learning methodologies. This approach combines a growth analytics dashboard, an AI-powered Leitner system for personalized training, and Scrum-based lesson planning to optimize both product development and user learning outcomes.
 
-```mermaid
-%%{init: {"themeVariables": {"fontSize": "16px", "nodeSpacing": 50, "rankSpacing": 100}}}%%
-graph TD
-    A[Docsity Sprint Platform] --> B[Educational Scrum Framework]
-    A --> C[Adaptive Leitner Engine]
-    A --> D[Growth Analytics Dashboard]
-    
-    B --> B1[Weekly Study Sprints]
-    B --> B2[Personal Kanban Board]
-    B --> B3[Virtual Standups]
-    B --> B4[Exam Retrospectives]
-    
-    C --> C1[Smart Flashcards]
-    C --> C2[Spaced Repetition AI]
-    C --> C3[Weakness Prediction]
-    C --> C4[Auto-Review Alerts]
-    
-    D --> D1[Mastery Curve]
-    D --> D2[Focus Time Metrics]
-    D --> D3[Score Forecast]
-    D --> D4[Adaptive Recommendations]
-    
-    E[User] -->|Interaction| B
-    E -->|Usage Data| C
-    E -->|Performance| D
-    D -->|Feedback| C
-    C -->|Optimization| B
-```
+
+From my perspective, this project embodies a fluid and intelligent ecosystem where user behavior, adaptive learning, and performance analytics are interconnected in a continuous cycle of improvement. The platform’s architecture connects educational planning with spaced repetition, predictive feedback, and growth tracking—allowing learning to evolve responsively to the user’s progress. As study habits feed into personalized flashcard optimization, performance data drives forecasting and recommendations, while AI modules loop insights back into planning through an intuitive dashboard. This synthesis of learning design, automation, and user-centered analytics reflects how Docsity can transform from a content host into an active learning companion.
+
+![Diagram 1](info/diagrams/D1.png)  
+![Diagram 2](info/diagrams/D2.png)  
+![Diagram 3](info/diagrams/D3.png)  
 
 Sincerely,  
 **Shakour Alishahi**  
