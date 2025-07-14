@@ -4,13 +4,30 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About the job</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
+  @page {
+    size: A4;
+    margin: 2cm;
+  }
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 2rem;
+    margin: 0;
     color: #333;
     background-color: #fff;
+  }
+  .page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background: white;
+    page-break-after: always;
   }
   h1, h2, h3 {
     color: #2c3e50;
@@ -32,6 +49,7 @@
 </style>
 </head>
 <body>
+<div class="page container">
 <h1>About the job</h1>
 
 <p>Docsity is an educational community where millions of university students share and find study content to improve their exam preparation. Our mission is to help students to be more effective in their preparation, and connect them with meaningful learning opportunities.</p>
@@ -74,6 +92,8 @@
   <li>Opportunity to grow personally and professionally through training and peer interaction</li>
   <li>Hybrid work structure: 4 days in the office and 1 day of smart working per week.</li>
 </ul>
-
+</div>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
