@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cover Letter - Product & Operations Lead at Docsity</title>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -14,74 +13,20 @@
         }
         
         body {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            background: #f0f2f5;
             padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-            color: #333;
-        }
-        
-        .container {
-            max-width: 1200px;
-            width: 100%;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .header h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .controls {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-            flex-wrap: wrap;
-        }
-        
-        button {
-            padding: 12px 20px;
-            background: #3498db;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: 600;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        button:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
-        }
-        
-        button:active {
-            transform: translateY(0);
         }
         
         .a4-container {
             width: 210mm;
-            min-height: 297mm;
             background: white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin-bottom: 10mm;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10mm; /* 1cm gap between pages */
             padding: 20mm;
             position: relative;
-            border-radius: 5px;
         }
         
         .a4-container:last-child {
@@ -96,9 +41,9 @@
             font-size: 12px;
         }
         
-        .content-header {
+        header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             padding-bottom: 15px;
             border-bottom: 2px solid #3498db;
         }
@@ -122,72 +67,51 @@
         .salutation {
             margin: 20px 0;
             font-weight: 500;
-            font-size: 18px;
         }
         
         .content {
-            line-height: 1.7;
+            line-height: 1.6;
             color: #34495e;
-            font-size: 16px;
         }
         
         .content p {
-            margin-bottom: 18px;
+            margin-bottom: 15px;
             text-align: justify;
         }
         
         .swot-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 30px 0;
+            gap: 15px;
+            margin: 25px 0;
         }
         
         .swot-section {
             border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .swot-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            padding: 15px;
         }
         
         .swot-section h3 {
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: #2c3e50;
-            padding-bottom: 8px;
+            padding-bottom: 5px;
             border-bottom: 1px solid #eee;
-            font-size: 18px;
         }
         
-        .strengths { background-color: rgba(46, 204, 113, 0.1); border-top: 4px solid #2ecc71; }
-        .weaknesses { background-color: rgba(231, 76, 60, 0.1); border-top: 4px solid #e74c3c; }
-        .opportunities { background-color: rgba(52, 152, 219, 0.1); border-top: 4px solid #3498db; }
-        .threats { background-color: rgba(241, 196, 15, 0.1); border-top: 4px solid #f1c40f; }
+        .strengths { background-color: #e8f5e9; }
+        .weaknesses { background-color: #ffebee; }
+        .opportunities { background-color: #e3f2fd; }
+        .threats { background-color: #fff8e1; }
         
         .swot-list {
             list-style-type: none;
         }
         
         .swot-list li {
-            padding: 10px 0;
+            padding: 8px 0;
             border-bottom: 1px dashed #e0e0e0;
-            display: flex;
-            align-items: flex-start;
-        }
-        
-        .swot-list li:before {
-            content: "•";
-            color: #3498db;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-right: 10px;
-            margin-top: 4px;
         }
         
         .swot-list li:last-child {
@@ -195,210 +119,65 @@
         }
         
         .challenge-section {
-            background: linear-gradient(to right, #f8f9fa, #e9ecef);
-            padding: 25px;
-            border-radius: 8px;
-            margin: 30px 0;
-            border-left: 4px solid #3498db;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 25px 0;
         }
         
         .challenge-section h3 {
             color: #2c3e50;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-align: center;
-            font-size: 20px;
         }
         
         .challenge-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 15px;
         }
         
         .challenge-card {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            transition: all 0.3s;
-        }
-        
-        .challenge-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         
         .challenge-card h4 {
             color: #3498db;
-            margin-bottom: 12px;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .challenge-card h4:before {
-            content: "✓";
-            background: #3498db;
-            color: white;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            font-size: 16px;
+            margin-bottom: 10px;
         }
         
         .signature {
-            margin-top: 40px;
+            margin-top: 30px;
             text-align: right;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
         }
         
         .signature p {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
         
         .platform-section {
-            margin: 30px 0;
-            padding: 25px;
-            background: #f8f9fa;
-            border-radius: 8px;
+            margin: 25px 0;
+            padding: 20px;
+            background: #f9f9f9;
             border-left: 4px solid #3498db;
         }
         
-        .platform-section h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        .diagram-container {
-            height: 300px;
-            margin: 25px 0;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            background: white;
-            position: relative;
-        }
-        
-        .diagram-title {
-            background: #3498db;
-            color: white;
-            padding: 10px 15px;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .diagram-actions {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .diagram-actions button {
-            padding: 3px 10px;
-            font-size: 12px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 4px;
-        }
-        
-        .diagram-actions button:hover {
-            background: rgba(255,255,255,0.3);
-        }
-        
-        .mermaid {
-            width: 100%;
-            height: calc(100% - 40px);
-            padding: 15px;
-            overflow: auto;
-        }
-        
         .diagram-placeholder {
+            height: 150px;
+            background: #e0e7ff;
+            border: 1px dashed #4e73df;
+            border-radius: 5px;
+            margin: 20px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100%;
-            color: #7f8c8d;
-            font-style: italic;
+            color: #4e73df;
+            font-weight: 500;
         }
         
-        .footer {
-            margin-top: 30px;
-            text-align: center;
-            color: white;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        /* Dark Mode Styles */
-        body.dark-mode {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #e0e0e0;
-        }
-        
-        body.dark-mode .a4-container {
-            background: #1e1e1e;
-            color: #e0e0e0;
-        }
-        
-        body.dark-mode h1,
-        body.dark-mode h3,
-        body.dark-mode .swot-section h3,
-        body.dark-mode .challenge-card h4 {
-            color: #bb86fc;
-        }
-        
-        body.dark-mode .contact-info,
-        body.dark-mode .page-number {
-            color: #9e9e9e;
-        }
-        
-        body.dark-mode .content {
-            color: #e0e0e0;
-        }
-        
-        body.dark-mode .swot-section {
-            border-color: #424242;
-            background: #2d2d2d !important;
-        }
-        
-        body.dark-mode .strengths { border-top-color: #2ecc71; }
-        body.dark-mode .weaknesses { border-top-color: #e74c3c; }
-        body.dark-mode .opportunities { border-top-color: #3498db; }
-        body.dark-mode .threats { border-top-color: #f1c40f; }
-        
-        body.dark-mode .challenge-section {
-            background: linear-gradient(to right, #2d2d2d, #252525);
-        }
-        
-        body.dark-mode .challenge-card {
-            background: #252525;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-        
-        body.dark-mode .platform-section {
-            background: #2d2d2d;
-            border-left-color: #bb86fc;
-        }
-        
-        body.dark-mode .diagram-container {
-            border-color: #444;
-        }
-        
-        body.dark-mode .diagram-title {
-            background: #2c3e50;
-        }
-        
-        body.dark-mode .signature {
-            border-top-color: #444;
-        }
-
         @media print {
             body {
                 padding: 0;
@@ -409,7 +188,6 @@
                 box-shadow: none;
                 margin-bottom: 10mm;
                 page-break-after: always;
-                border-radius: 0;
             }
             
             .a4-container:last-child {
@@ -419,261 +197,167 @@
             .no-print {
                 display: none;
             }
-            
-            .header, .footer, .controls {
-                display: none;
-            }
+        }
+        
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #2980b9;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Cover Letter - Product & Operations Lead at Docsity</h1>
-            <p>Shakour Alishahi | shakouralishahi@gmail.com</p>
-        </div>
-        
-        <div class="controls no-print">
-            <button onclick="window.print()">Print Document</button>
-            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-            <button onclick="increaseFont()">Increase Font</button>
-            <button onclick="decreaseFont()">Decrease Font</button>
-            <button onclick="zoomDiagram('d1', 'in')">Zoom Diagram 1</button>
-            <button onclick="zoomDiagram('d1', 'out')">Shrink Diagram 1</button>
-            <button onclick="zoomDiagram('d2', 'in')">Zoom Diagram 2</button>
-            <button onclick="zoomDiagram('d2', 'out')">Shrink Diagram 2</button>
-            <button onclick="zoomDiagram('d3', 'in')">Zoom Diagram 3</button>
-            <button onclick="zoomDiagram('d3', 'out')">Shrink Diagram 3</button>
-        </div>
+    <div class="controls no-print">
+        <button onclick="window.print()">Print Document</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button onclick="increaseFont()">Increase Font</button>
+        <button onclick="decreaseFont()">Decrease Font</button>
+    </div>
 
-        <!-- Page 1 -->
-        <div class="a4-container">
-            <div class="page-number">Page 1 of 3</div>
-            <div class="content-header">
-                <h1>Cover Letter - Product & Operations Lead at Docsity</h1>
-                <div class="contact-info">
-                    <span>Email: shakouralishahi@gmail.com</span>
-                    <span>Phone: +98 912 446 7903</span>
-                    <span>GitHub: Shakour-Data</span>
+    <!-- Page 1 -->
+    <div class="a4-container">
+        <div class="page-number">Page 1 of 3</div>
+        <header>
+            <h1>Cover Letter - Product & Operations Lead at Docsity</h1>
+            <div class="contact-info">
+                <span>Email: shakouralishahi@gmail.com</span>
+                <span>Phone: +98 912 446 7903</span>
+                <span>GitHub: Shakour-Data</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <p class="salutation">Dear Hiring Team at Docsity,</p>
+            
+            <p>I am writing to express my interest in the Product & Operations Lead position at Docsity. With over twelve years of experience in designing financial systems, executing algorithmic trading strategies, and managing fintech projects, I am confident in my ability to contribute effectively to your product development and operational success.</p>
+            
+            <p>My background includes leading the architecture of a Python-based Decision Support System for real-time market-making, developing LSTM-based models for price trend forecasting, and managing cross-functional teams on data-driven trading initiatives. These projects - particularly GravityWaves, my AI-based forecasting platform - demonstrate my ability to translate market data into actionable product features with precision and strategic insight.</p>
+            
+            <p>Though I am currently based in Iran, I am actively preparing for relocation to Italy, where my sister lives in Turin. Her presence provides a stable and supportive foundation for cultural and logistical integration, ensuring minimal disruption during onboarding. I view this relocation not as a challenge, but as an opportunity to bring global perspective, adaptability, and resilience to your team.</p>
+            
+            <p>To provide clarity around my professional positioning, I offer the following overview of my candidacy:</p>
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="a4-container">
+        <div class="page-number">Page 2 of 3</div>
+        <div class="content">
+            <div class="swot-grid">
+                <div class="swot-section strengths">
+                    <h3>Strengths</h3>
+                    <ul class="swot-list">
+                        <li>Extensive experience in algorithmic trading and product design</li>
+                        <li>Proven execution of AI-driven forecasting platforms</li>
+                        <li>Proficiency in Python, GitHub CLI, CI/CD automation</li>
+                    </ul>
+                </div>
+                
+                <div class="swot-section weaknesses">
+                    <h3>Weaknesses</h3>
+                    <ul class="swot-list">
+                        <li>Lack of fluency in Italian (currently learning)</li>
+                        <li>Residency outside Italy requiring relocation</li>
+                        <li>Limited work experience in European markets</li>
+                    </ul>
+                </div>
+                
+                <div class="swot-section opportunities">
+                    <h3>Opportunities</h3>
+                    <ul class="swot-list">
+                        <li>Transfer of specialized insights from emerging markets</li>
+                        <li>Family support in Turin enabling smooth transition</li>
+                        <li>Contribution to Docsity's AI and data-oriented projects</li>
+                    </ul>
+                </div>
+                
+                <div class="swot-section threats">
+                    <h3>Threats</h3>
+                    <ul class="swot-list">
+                        <li>Visa process and potential onboarding delays</li>
+                        <li>Initial limitations in local networking and integration</li>
+                        <li>Rapid adaptation expected within a dynamic work culture</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="content">
-                <p class="salutation">Dear Hiring Team at Docsity,</p>
-                
-                <p>I am writing to express my interest in the Product & Operations Lead position at Docsity. With over twelve years of experience in designing financial systems, executing algorithmic trading strategies, and managing fintech projects, I am confident in my ability to contribute effectively to your product development and operational success.</p>
-                
-                <p>My background includes leading the architecture of a Python-based Decision Support System for real-time market-making, developing LSTM-based models for price trend forecasting, and managing cross-functional teams on data-driven trading initiatives. These projects - particularly GravityWaves, my AI-based forecasting platform - demonstrate my ability to translate market data into actionable product features with precision and strategic insight.</p>
-                
-                <p>Though I am currently based in Iran, I am actively preparing for relocation to Italy, where my sister lives in Turin. Her presence provides a stable and supportive foundation for cultural and logistical integration, ensuring minimal disruption during onboarding. I view this relocation not as a challenge, but as an opportunity to bring global perspective, adaptability, and resilience to your team.</p>
-                
-                <p>To provide clarity around my professional positioning, I offer the following overview of my candidacy:</p>
+            <div class="challenge-section">
+                <h3>Turning Challenges into Strategic Advantages</h3>
+                <div class="challenge-grid">
+                    <div class="challenge-card">
+                        <h4>Language</h4>
+                        <p>I am actively investing in Italian language acquisition through daily practice and immersive learning resources.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Relocation Logistics</h4>
+                        <p>With my sister's presence in Turin and structured planning underway, I expect a smooth transition to Italy.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Lack of EU Experience</h4>
+                        <p>My expertise in emerging markets provides a complementary viewpoint that enriches product strategy.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Networking</h4>
+                        <p>I plan to accelerate integration into the Italian professional community with the help of personal and industry channels.</p>
+                    </div>
+                </div>
             </div>
+            
+            <p>Docsity's commitment to meaningful learning and data-powered innovation strongly aligns with my professional values. I am excited to contribute not only technical knowledge but also strategic leadership and international perspective to your team. Thank you for considering my application.</p>
         </div>
+    </div>
 
-        <!-- Page 2 -->
-        <div class="a4-container">
-            <div class="page-number">Page 2 of 3</div>
-            <div class="content">
-                <div class="swot-grid">
-                    <div class="swot-section strengths">
-                        <h3>Strengths</h3>
-                        <ul class="swot-list">
-                            <li>Extensive experience in algorithmic trading and product design</li>
-                            <li>Proven execution of AI-driven forecasting platforms</li>
-                            <li>Proficiency in Python, GitHub CLI, CI/CD automation</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="swot-section weaknesses">
-                        <h3>Weaknesses</h3>
-                        <ul class="swot-list">
-                            <li>Lack of fluency in Italian (currently learning)</li>
-                            <li>Residency outside Italy requiring relocation</li>
-                            <li>Limited work experience in European markets</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="swot-section opportunities">
-                        <h3>Opportunities</h3>
-                        <ul class="swot-list">
-                            <li>Transfer of specialized insights from emerging markets</li>
-                            <li>Family support in Turin enabling smooth transition</li>
-                            <li>Contribution to Docsity's AI and data-oriented projects</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="swot-section threats">
-                        <h3>Threats</h3>
-                        <ul class="swot-list">
-                            <li>Visa process and potential onboarding delays</li>
-                            <li>Initial limitations in local networking and integration</li>
-                            <li>Rapid adaptation expected within a dynamic work culture</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Page 3 -->
+    <div class="a4-container">
+        <div class="page-number">Page 3 of 3</div>
+        <div class="content">
+            <div class="platform-section">
+                <h3>Innovative Platform Development and Educational Planning</h3>
+                <p>In addition to my technical expertise, I propose an innovative approach to platform development and educational planning that integrates advanced time management and project control systems with adaptive learning methodologies. This approach combines a growth analytics dashboard, an AI-powered Leitner system for personalized training, and Scrum-based lesson planning to optimize both product development and user learning outcomes.</p>
                 
-                <div class="challenge-section">
-                    <h3>Turning Challenges into Strategic Advantages</h3>
-                    <div class="challenge-grid">
-                        <div class="challenge-card">
-                            <h4>Language</h4>
-                            <p>I am actively investing in Italian language acquisition through daily practice and immersive learning resources.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <h4>Relocation Logistics</h4>
-                            <p>With my sister's presence in Turin and structured planning underway, I expect a smooth transition to Italy.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <h4>Lack of EU Experience</h4>
-                            <p>My expertise in emerging markets provides a complementary viewpoint that enriches product strategy.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <h4>Networking</h4>
-                            <p>I plan to accelerate integration into the Italian professional community with the help of personal and industry channels.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <p>Docsity's commitment to meaningful learning and data-powered innovation strongly aligns with my professional values. I am excited to contribute not only technical knowledge but also strategic leadership and international perspective to your team. Thank you for considering my application.</p>
+                <p>From my perspective, this project embodies a fluid and intelligent ecosystem where user behavior, adaptive learning, and performance analytics are interconnected in a continuous cycle of improvement. The platform's architecture connects educational planning with spaced repetition, predictive feedback, and growth tracking—allowing learning to evolve responsively to the user's progress. As study habits feed into personalized flashcard optimization, performance data drives forecasting and recommendations, while AI modules loop insights back into planning through an intuitive dashboard. This synthesis of learning design, automation, and user-centered analytics reflects how Docsity can transform from a content host into an active learning companion.</p>
             </div>
-        </div>
-
-        <!-- Page 3 -->
-        <div class="a4-container">
-            <div class="page-number">Page 3 of 3</div>
-            <div class="content">
-                <div class="platform-section">
-                    <h3>Innovative Platform Development and Educational Planning</h3>
-                    <p>In addition to my technical expertise, I propose an innovative approach to platform development and educational planning that integrates advanced time management and project control systems with adaptive learning methodologies. This approach combines a growth analytics dashboard, an AI-powered Leitner system for personalized training, and Scrum-based lesson planning to optimize both product development and user learning outcomes.</p>
-                    
-                    <p>From my perspective, this project embodies a fluid and intelligent ecosystem where user behavior, adaptive learning, and performance analytics are interconnected in a continuous cycle of improvement. The platform's architecture connects educational planning with spaced repetition, predictive feedback, and growth tracking—allowing learning to evolve responsively to the user's progress. As study habits feed into personalized flashcard optimization, performance data drives forecasting and recommendations, while AI modules loop insights back into planning through an intuitive dashboard. This synthesis of learning design, automation, and user-centered analytics reflects how Docsity can transform from a content host into an active learning companion.</p>
-                </div>
-                
-                <!-- Diagram 1 -->
-                <div class="diagram-container">
-                    <div class="diagram-title">
-                        <span>Diagram 1: Platform Architecture</span>
-                        <div class="diagram-actions">
-                            <button onclick="zoomDiagram('d1', 'in')">+</button>
-                            <button onclick="zoomDiagram('d1', 'out')">-</button>
-                            <button onclick="zoomDiagram('d1', 'reset')">Reset</button>
-                        </div>
-                    </div>
-                    <div id="diagram1" class="mermaid">
-graph TD
-    A[Docsity Sprint Platform] --> B[Educational Scrum Framework]
-    A --> C[Adaptive Leitner Engine]
-    A --> D[Growth Analytics Dashboard]
-    
-    B --> B1[Weekly Study Sprints]
-    B --> B2[Personal Kanban Board]
-    B --> B3[Virtual Standups]
-    B --> B4[Exam Retrospectives]
-    
-    C --> C1[Smart Flashcards]
-    C --> C2[Spaced Repetition AI]
-    C --> C3[Weakness Prediction]
-    C --> C4[Auto-Review Alerts]
-    
-    D --> D1[Mastery Curve]
-    D --> D2[Focus Time Metrics]
-    D --> D3[Score Forecast]
-    D --> D4[Adaptive Recommendations]
-    
-    E[User] -->|Interaction| B
-    E -->|Usage Data| C
-    E -->|Performance| D
-    D -->|Feedback| C
-    C -->|Optimization| B
-                    </div>
-                </div>
-                
-                <!-- Diagram 2 -->
-                <div class="diagram-container">
-                    <div class="diagram-title">
-                        <span>Diagram 2: Learning Workflow</span>
-                        <div class="diagram-actions">
-                            <button onclick="zoomDiagram('d2', 'in')">+</button>
-                            <button onclick="zoomDiagram('d2', 'out')">-</button>
-                            <button onclick="zoomDiagram('d2', 'reset')">Reset</button>
-                        </div>
-                    </div>
-                    <div id="diagram2" class="mermaid">
-graph TD
-    A[Docsity Sprint Platform] --> B[Scrum Workflow]
-    A --> C[Leitner Engine]
-    A --> D[Analytics Dashboard]
-    
-    B --> B1[Weekly Sprints]
-    B --> B2[Kanban Tasks]
-    B --> B3[Retrospectives]
-    
-    C --> C1[Flashcards]
-    C --> C2[Spaced Repetition]
-    C --> C3[Weakness Alerts]
-    
-    D --> D1[Mastery Tracking]
-    D --> D2[Score Forecast]
-    
-    E[User] -->|Study Behavior| B
-    E -->|Performance Metrics| D
-    D -->|Feedback Flow| C
-                    </div>
-                </div>
-                
-                <!-- Diagram 3 -->
-                <div class="diagram-container">
-                    <div class="diagram-title">
-                        <span>Diagram 3: AI Feedback Loop</span>
-                        <div class="diagram-actions">
-                            <button onclick="zoomDiagram('d3', 'in')">+</button>
-                            <button onclick="zoomDiagram('d3', 'out')">-</button>
-                            <button onclick="zoomDiagram('d3', 'reset')">Reset</button>
-                        </div>
-                    </div>
-                    <div id="diagram3" class="mermaid">
-graph LR
-    A[Content Library] --> B[AI Engine]
-    B --> C[Leitner Module]
-    C --> D{Forgetfulness Forecast}
-    D --> E[(Save Results)]
-    B --> F[Sprint Planner]
-    F --> G[Growth Curve Dashboard]
-    G --> H[Progress Analytics]
-    H --> I[Mobile App]
-    H -->|Feedback| B
-                    </div>
-                </div>
-                
-                <div class="signature">
-                    <p>Sincerely,</p>
-                    <p><strong>Shakour Alishahi</strong></p>
-                    <p>Email: shakouralishahi@gmail.com</p>
-                    <p>Phone: +98 912 446 7903</p>
-                    <p>GitHub: <a href="https://github.com/Shakour-Data">Shakour-Data</a></p>
-                </div>
+            
+            <div class="diagram-placeholder">Diagram 1: Platform Architecture</div>
+            <div class="diagram-placeholder">Diagram 2: Learning Workflow</div>
+            <div class="diagram-placeholder">Diagram 3: AI Feedback Loop</div>
+            
+            <div class="signature">
+                <p>Sincerely,</p>
+                <p><strong>Shakour Alishahi</strong></p>
+                <p>Email: shakouralishahi@gmail.com</p>
+                <p>Phone: +98 912 446 7903</p>
+                <p>GitHub: <a href="https://github.com/Shakour-Data">Shakour-Data</a></p>
             </div>
-        </div>
-        
-        <div class="footer no-print">
-            <p>Cover Letter - Product & Operations Lead at Docsity | Shakour Alishahi</p>
-            <p>Designed for A4 Printing | Diagrams are interactive</p>
         </div>
     </div>
 
     <script>
-        // Initialize Mermaid
-        mermaid.initialize({ 
-            startOnLoad: true,
-            theme: 'default',
-            securityLevel: 'loose',
-            fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
-        });
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
         
-        // Font size functions
         function increaseFont() {
-            const content = document.querySelectorAll('.content, .swot-section, .challenge-card, .platform-section');
+            const content = document.querySelectorAll('.content');
             content.forEach(el => {
                 const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
                 el.style.fontSize = (currentSize + 1) + 'px';
@@ -681,7 +365,7 @@ graph LR
         }
         
         function decreaseFont() {
-            const content = document.querySelectorAll('.content, .swot-section, .challenge-card, .platform-section');
+            const content = document.querySelectorAll('.content');
             content.forEach(el => {
                 const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
                 if (currentSize > 12) {
@@ -690,41 +374,66 @@ graph LR
             });
         }
         
-        // Dark mode toggle
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            // Re-render diagrams for dark mode
-            mermaid.init(undefined, '.mermaid');
-        }
-        
-        // Diagram zoom functionality
-        function zoomDiagram(diagramId, action) {
-            const diagram = document.getElementById(diagramId);
-            let currentScale = parseFloat(diagram.getAttribute('data-scale')) || 1;
-            
-            switch(action) {
-                case 'in':
-                    currentScale = Math.min(2, currentScale * 1.1);
-                    break;
-                case 'out':
-                    currentScale = Math.max(0.5, currentScale * 0.9);
-                    break;
-                case 'reset':
-                    currentScale = 1;
-                    break;
+        // Add dark mode styles dynamically
+        const style = document.createElement('style');
+        style.innerHTML = `
+            body.dark-mode {
+                background: #121212;
+                color: #e0e0e0;
             }
             
-            diagram.setAttribute('data-scale', currentScale);
-            diagram.style.transform = `scale(${currentScale})`;
-            diagram.style.transformOrigin = 'top left';
-        }
-        
-        // Initialize diagrams with IDs
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.mermaid').forEach((el, index) => {
-                el.id = `d${index+1}`;
-            });
-        });
+            body.dark-mode .a4-container {
+                background: #1e1e1e;
+                color: #e0e0e0;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            }
+            
+            body.dark-mode h1,
+            body.dark-mode h3,
+            body.dark-mode .swot-section h3,
+            body.dark-mode .challenge-card h4 {
+                color: #bb86fc;
+            }
+            
+            body.dark-mode .contact-info,
+            body.dark-mode .page-number {
+                color: #9e9e9e;
+            }
+            
+            body.dark-mode .content {
+                color: #e0e0e0;
+            }
+            
+            body.dark-mode .swot-section {
+                border-color: #424242;
+            }
+            
+            body.dark-mode .strengths { background-color: #1b5e20; }
+            body.dark-mode .weaknesses { background-color: #b71c1c; }
+            body.dark-mode .opportunities { background-color: #0d47a1; }
+            body.dark-mode .threats { background-color: #f57f17; }
+            
+            body.dark-mode .challenge-section {
+                background: #2d2d2d;
+            }
+            
+            body.dark-mode .challenge-card {
+                background: #252525;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            
+            body.dark-mode .platform-section {
+                background: #2d2d2d;
+                border-left-color: #bb86fc;
+            }
+            
+            body.dark-mode .diagram-placeholder {
+                background: #1e3a8a;
+                border-color: #3b82f6;
+                color: #bfdbfe;
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
 </html>
