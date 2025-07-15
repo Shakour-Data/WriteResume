@@ -1,166 +1,552 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lettera di Presentazione - Responsabile Prodotto e Operazioni presso Docsity</title>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-<!-- Chart.js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<style>
-  @page {
-    size: A4;
-    margin: 2cm;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    color: #333;
-    background-color: #fff;
-  }
-  .page {
-    width: 21cm;
-    min-height: 29.7cm;
-    padding: 2cm;
-    margin: 1cm auto 3cm auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    background: white;
-    page-break-after: always;
-    overflow: visible;
-  }
-  h1, h2, h3 {
-    color: #2c3e50;
-  }
-  h1 {
-    border-bottom: 2px solid #2980b9;
-    padding-bottom: 0.3em;
-  }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 1rem 0;
-    page-break-inside: avoid;
-  }
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  th, td {
-    padding: 0.5rem;
-    text-align: left;
-  }
-  th {
-    background-color: #2980b9;
-    color: white;
-  }
-  ul {
-    margin: 1rem 0 1rem 1.5rem;
-  }
-  ul, li {
-    page-break-inside: avoid;
-  }
-  a {
-    color: #2980b9;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  img {
-    page-break-inside: avoid;
-    max-width: 80%;
-    height: auto;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter - Product & Operations Lead at Docsity</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .a4-container {
+            width: 210mm;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10mm;
+            padding: 20mm;
+            position: relative;
+        }
+
+        .a4-container:last-child {
+            margin-bottom: 0;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 10mm;
+            right: 20mm;
+            color: #777;
+            font-size: 12px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .salutation {
+            margin: 20px 0;
+            font-weight: 500;
+        }
+
+        .content {
+            line-height: 1.6;
+            color: #34495e;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .swot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .swot-section {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .swot-section h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .strengths {
+            background-color: #e8f5e9;
+        }
+
+        .weaknesses {
+            background-color: #ffebee;
+        }
+
+        .opportunities {
+            background-color: #e3f2fd;
+        }
+
+        .threats {
+            background-color: #fff8e1;
+        }
+
+        .swot-list {
+            list-style-type: none;
+        }
+
+        .swot-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .swot-list li:last-child {
+            border-bottom: none;
+        }
+
+        .challenge-section {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 25px 0;
+        }
+
+        .challenge-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .challenge-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .challenge-card {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .challenge-card h4 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .signature {
+            margin-top: 30px;
+            text-align: right;
+        }
+
+        .signature p {
+            margin-bottom: 5px;
+        }
+
+        .platform-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+        }
+
+        .mermaid-box {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1em;
+            margin: 2em 0;
+            background-color: #f9f9f9;
+            overflow: auto;
+            font-size: 14px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .a4-container {
+                box-shadow: none;
+                margin-bottom: 10mm;
+                page-break-after: always;
+            }
+
+            .a4-container:last-child {
+                page-break-after: auto;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            mermaid.initialize({ 
+                startOnLoad: true,
+                theme: 'default',
+                fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+                securityLevel: 'loose'
+            });
+        });
+    </script>
 </head>
 <body>
-<div class="page container">
-<h1>Lettera di Presentazione - Responsabile Prodotto e Operazioni presso Docsity</h1>
+    <div class="controls no-print">
+        <button onclick="window.print()">Print Document</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button onclick="increaseFont()">Increase Font</button>
+        <button onclick="decreaseFont()">Decrease Font</button>
+    </div>
 
-<p>Gentile Team di Selezione di Docsity,</p>
+    <!-- Page 1 -->
+    <div class="a4-container">
+        <div class="page-number">Page 1 of 3</div>
+        <header>
+            <h1>Cover Letter - Product & Operations Lead at Docsity</h1>
+            <div class="contact-info">
+                <span>Email: shakouralishahi@gmail.com</span>
+                <span>Phone: +98 912 446 7903</span>
+                <span>GitHub: Shakour-Data</span>
+            </div>
+        </header>
 
-<p>Scrivo per esprimere il mio interesse per la posizione di Responsabile Prodotto e Operazioni presso Docsity. Con oltre dodici anni di esperienza nella progettazione di sistemi finanziari, nell'esecuzione di strategie di trading algoritmico e nella gestione di progetti fintech, sono fiducioso nella mia capacità di contribuire efficacemente allo sviluppo del prodotto e al successo operativo della vostra azienda.</p>
+        <div class="content">
+            <p class="salutation">Dear Hiring Team at Docsity,</p>
 
-<p>Il mio background include la guida dell'architettura di un Sistema di Supporto alle Decisioni basato su Python per il market-making in tempo reale, lo sviluppo di modelli basati su LSTM per la previsione delle tendenze dei prezzi e la gestione di team cross-funzionali su iniziative di trading basate sui dati. Questi progetti - in particolare GravityWaves, la mia piattaforma di previsione basata su AI - dimostrano la mia capacità di tradurre i dati di mercato in funzionalità di prodotto azionabili con precisione e visione strategica.</p>
+            <p>I am writing to express my interest in the Product & Operations Lead position at Docsity. With over
+                twelve years of experience in designing financial systems, executing algorithmic trading strategies, and
+                managing fintech projects, I am confident in my ability to contribute effectively to your product
+                development and operational success.</p>
 
-<p>Da mio punto di vista, questo progetto incarna un ecosistema fluido e intelligente in cui il comportamento dell'utente, l'apprendimento adattivo e l'analisi delle prestazioni sono interconnessi in un ciclo continuo di miglioramento. L'architettura della piattaforma collega la pianificazione educativa con la ripetizione dilazionata, il feedback predittivo e il monitoraggio della crescita, permettendo all'apprendimento di evolversi in modo reattivo rispetto ai progressi dell'utente. Le abitudini di studio alimentano l'ottimizzazione personalizzata delle flashcard, i dati sulle prestazioni guidano le previsioni e le raccomandazioni, mentre i moduli di intelligenza artificiale reinseriscono le intuizioni nella pianificazione attraverso una dashboard intuitiva. Questa sintesi di progettazione dell'apprendimento, automazione e analisi centrata sull'utente riflette come Docsity possa trasformarsi da semplice contenitore di contenuti a compagno di apprendimento attivo.</p>
+            <p>My background includes leading the architecture of a Python-based Decision Support System for real-time
+                market-making, developing LSTM-based models for price trend forecasting, and managing cross-functional
+                teams on data-driven trading initiatives. These projects - particularly GravityWaves, my AI-based
+                forecasting platform - demonstrate my ability to translate market data into actionable product features
+                with precision and strategic insight.</p>
 
-<p>Sebbene attualmente risieda in Iran, sto attivamente preparando il trasferimento in Italia, dove vive mia sorella a Torino. La sua presenza fornisce una base stabile e di supporto per l'integrazione culturale e logistica, garantendo una minima interruzione durante l'onboarding. Vedo questo trasferimento non come una sfida, ma come un'opportunità per portare una prospettiva globale, adattabilità e resilienza al vostro team.</p>
+            <p>Though I am currently based in Iran, I am actively preparing for relocation to Italy, where my sister
+                lives in Turin. Her presence provides a stable and supportive foundation for cultural and logistical
+                integration, ensuring minimal disruption during onboarding. I view this relocation not as a challenge,
+                but as an opportunity to bring global perspective, adaptability, and resilience to your team.</p>
 
-<p>Per fornire chiarezza riguardo alla mia posizione professionale, offro la seguente panoramica della mia candidatura:</p>
+            <p>To provide clarity around my professional positioning, I offer the following overview of my candidacy:
+            </p>
+        </div>
+    </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Punti di Forza</th>
-      <th>Debolezze</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Ampia esperienza nel trading algoritmico e nella progettazione di prodotti</td>
-      <td>Mancanza di padronanza della lingua italiana (attualmente in fase di apprendimento)</td>
-    </tr>
-    <tr>
-      <td>Esecuzione comprovata di piattaforme di previsione basate su AI</td>
-      <td>Residenza fuori dall'Italia che richiede trasferimento</td>
-    </tr>
-    <tr>
-      <td>Competenza in Python, GitHub CLI, automazione CI/CD</td>
-      <td>Esperienza lavorativa limitata nei mercati europei</td>
-    </tr>
-  </tbody>
-</table>
+    <!-- Page 2 -->
+    <div class="a4-container">
+        <div class="page-number">Page 2 of 3</div>
+        <div class="content">
+            <div class="swot-grid">
+                <div class="swot-section strengths">
+                    <h3>Strengths</h3>
+                    <ul class="swot-list">
+                        <li>Extensive experience in algorithmic trading and product design</li>
+                        <li>Proven execution of AI-driven forecasting platforms</li>
+                        <li>Proficiency in Python, GitHub CLI, CI/CD automation</li>
+                    </ul>
+                </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Opportunità</th>
-      <th>Minacce</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Trasferimento di conoscenze specializzate da mercati emergenti</td>
-      <td>Processo di visto e potenziali ritardi nell'onboarding</td>
-    </tr>
-    <tr>
-      <td>Supporto familiare a Torino che facilita una transizione fluida</td>
-      <td>Limitazioni iniziali nel networking e integrazione locale</td>
-    </tr>
-    <tr>
-      <td>Contributo ai progetti AI e orientati ai dati di Docsity</td>
-      <td>Adattamento rapido richiesto in un ambiente di lavoro dinamico</td>
-    </tr>
-  </tbody>
-</table>
+                <div class="swot-section weaknesses">
+                    <h3>Weaknesses</h3>
+                    <ul class="swot-list">
+                        <li>Lack of fluency in Italian (currently learning)</li>
+                        <li>Residency outside Italy requiring relocation</li>
+                        <li>Limited work experience in European markets</li>
+                    </ul>
+                </div>
 
-<h3>Trasformare le Sfide in Vantaggi Strategici</h3>
+                <div class="swot-section opportunities">
+                    <h3>Opportunities</h3>
+                    <ul class="swot-list">
+                        <li>Transfer of specialized insights from emerging markets</li>
+                        <li>Family support in Turin enabling smooth transition</li>
+                        <li>Contribution to Docsity's AI and data-oriented projects</li>
+                    </ul>
+                </div>
 
-<ul>
-  <li><strong>Lingua</strong>: Sto investendo attivamente nell'acquisizione della lingua italiana attraverso pratica quotidiana e risorse di apprendimento immersive.</li>
-  <li><strong>Logistica del trasferimento</strong>: Con la presenza di mia sorella a Torino e una pianificazione strutturata in corso, prevedo una transizione senza intoppi in Italia.</li>
-  <li><strong>Mancanza di esperienza nell'UE</strong>: La mia esperienza nei mercati emergenti offre un punto di vista complementare che arricchisce la strategia di prodotto.</li>
-  <li><strong>Networking</strong>: Ho in programma di accelerare l'integrazione nella comunità professionale italiana con l'aiuto di canali personali e di settore.</li>
-</ul>
+                <div class="swot-section threats">
+                    <h3>Threats</h3>
+                    <ul class="swot-list">
+                        <li>Visa process and potential onboarding delays</li>
+                        <li>Initial limitations in local networking and integration</li>
+                        <li>Rapid adaptation expected within a dynamic work culture</li>
+                    </ul>
+                </div>
+            </div>
 
-<p>L'impegno di Docsity per un apprendimento significativo e un'innovazione basata sui dati si allinea fortemente con i miei valori professionali. Sono entusiasta di poter contribuire non solo con conoscenze tecniche, ma anche con leadership strategica e una prospettiva internazionale al vostro team. Grazie per aver considerato la mia candidatura.</p>
+            <div class="challenge-section">
+                <h3>Turning Challenges into Strategic Advantages</h3>
+                <div class="challenge-grid">
+                    <div class="challenge-card">
+                        <h4>Language</h4>
+                        <p>I am actively investing in Italian language acquisition through daily practice and immersive
+                            learning resources.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Relocation Logistics</h4>
+                        <p>With my sister's presence in Turin and structured planning underway, I expect a smooth
+                            transition to Italy.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Lack of EU Experience</h4>
+                        <p>My expertise in emerging markets provides a complementary viewpoint that enriches product
+                            strategy.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Networking</h4>
+                        <p>I plan to accelerate integration into the Italian professional community with the help of
+                            personal and industry channels.</p>
+                    </div>
+                </div>
+            </div>
 
-<div style="page-break-after: always;"></div>
+            <p>Docsity's commitment to meaningful learning and data-powered innovation strongly aligns with my
+                professional values. I am excited to contribute not only technical knowledge but also strategic
+                leadership and international perspective to your team. Thank you for considering my application.</p>
+        </div>
+    </div>
 
-<img src="diagrams/D1_it.png" alt="Diagram 1" />
-<img src="diagrams/D2_it.png" alt="Diagram 2" />
-<img src="diagrams/D3_it.png" alt="Diagram 3" />
+    <!-- Page 3 -->
+    <div class="a4-container">
+        <div class="page-number">Page 3 of 3</div>
+        <div class="content">
+            <div class="platform-section">
+                <h3>Innovative Platform Development and Educational Planning</h3>
+                <p>In addition to my technical expertise, I propose an innovative approach to platform development and
+                    educational planning that integrates advanced time management and project control systems with
+                    adaptive learning methodologies. This approach combines a growth analytics dashboard, an AI-powered
+                    Leitner system for personalized training, and Scrum-based lesson planning to optimize both product
+                    development and user learning outcomes.</p>
 
-<p>Cordiali saluti, <br />
-<strong>Shakour Alishahi</strong><br />
-Email: shakouralishahi@gmail.com<br />
-Telefono: +98 912 446 7903<br />
-GitHub: <a href="https://github.com/Shakour-Data" target="_blank" rel="noopener noreferrer">Shakour-Data</a></p>
+                <p>From my perspective, this project embodies a fluid and intelligent ecosystem where user behavior,
+                    adaptive learning, and performance analytics are interconnected in a continuous cycle of
+                    improvement. The platform's architecture connects educational planning with spaced repetition,
+                    predictive feedback, and growth tracking—allowing learning to evolve responsively to the user's
+                    progress. As study habits feed into personalized flashcard optimization, performance data drives
+                    forecasting and recommendations, while AI modules loop insights back into planning through an
+                    intuitive dashboard. This synthesis of learning design, automation, and user-centered analytics
+                    reflects how Docsity can transform from a content host into an active learning companion.</p>
+            </div>
 
-</div>
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Diagram 1 -->
+            <div class="mermaid-box">
+%%{init: {"themeVariables": {"fontSize": "16px", "nodeSpacing": 50, "rankSpacing": 100}}}%%
+graph TD
+    A[Docsity Sprint Platform] --> B[Educational Scrum Framework]
+    A --> C[Adaptive Leitner Engine]
+    A --> D[Growth Analytics Dashboard]
+    
+    B --> B1[Weekly Study Sprints]
+    B --> B2[Personal Kanban Board]
+    B --> B3[Virtual Standups]
+    B --> B4[Exam Retrospectives]
+    
+    C --> C1[Smart Flashcards]
+    C --> C2[Spaced Repetition AI]
+    C --> C3[Weakness Prediction]
+    C --> C4[Auto-Review Alerts]
+    
+    D --> D1[Mastery Curve]
+    D --> D2[Focus Time Metrics]
+    D --> D3[Score Forecast]
+    D --> D4[Adaptive Recommendations]
+    
+    E[User] -->|Interaction| B
+    E -->|Usage Data| C
+    E -->|Performance| D
+    D -->|Feedback| C
+    C -->|Optimization| B
+            </div>
+
+            <!-- Diagram 2 -->
+            <div class="mermaid-box">
+%%{init: {"themeVariables": {"fontSize": "15px", "nodeSpacing": 50, "rankSpacing": 100}}}%%
+graph TD
+    A[Docsity Sprint Platform] --> B[Scrum Workflow]
+    A --> C[Leitner Engine]
+    A --> D[Analytics Dashboard]
+    
+    B --> B1[Weekly Sprints]
+    B --> B2[Kanban Tasks]
+    B --> B3[Retrospectives]
+    
+    C --> C1[Flashcards]
+    C --> C2[Spaced Repetition]
+    C --> C3[Weakness Alerts]
+    
+    D --> D1[Mastery Tracking]
+    D --> D2[Score Forecast]
+    
+    E[User] -->|Study Behavior| B
+    E -->|Performance Metrics| D
+    D -->|Feedback Flow| C
+            </div>
+
+            <!-- Diagram 3 -->
+            <div class="mermaid-box">
+%%{init: {"themeVariables": {"fontSize": "15px", "nodeSpacing": 40, "rankSpacing": 100}}}%%
+graph LR
+    A[Content Library] --> B[AI Engine]
+    B --> C[Leitner Module]
+    C --> D{Forgetfulness Forecast}
+    D --> E[(Save Results)]
+    B --> F[Sprint Planner]
+    F --> G[Growth Curve Dashboard]
+    G --> H[Progress Analytics]
+    H --> I[Mobile App]
+    H -->|Feedback| B
+            </div>
+
+            <div class="signature">
+                <p>Sincerely,</p>
+                <p><strong>Shakour Alishahi</strong></p>
+                <p>Email: shakouralishahi@gmail.com</p>
+                <p>Phone: +98 912 446 7903</p>
+                <p>GitHub: <a href="https://github.com/Shakour-Data">Shakour-Data</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function increaseFont() {
+            const content = document.querySelectorAll('.content');
+            content.forEach(el => {
+                const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
+                el.style.fontSize = (currentSize + 1) + 'px';
+            });
+        }
+
+        function decreaseFont() {
+            const content = document.querySelectorAll('.content');
+            content.forEach(el => {
+                const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
+                if (currentSize > 12) {
+                    el.style.fontSize = (currentSize - 1) + 'px';
+                }
+            });
+        }
+
+        // Add dark mode styles dynamically
+        const style = document.createElement('style');
+        style.innerHTML = `
+            body.dark-mode {
+                background: #121212;
+                color: #e0e0e0;
+            }
+            
+            body.dark-mode .a4-container {
+                background: #1e1e1e;
+                color: #e0e0e0;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            }
+            
+            body.dark-mode h1,
+            body.dark-mode h3,
+            body.dark-mode .swot-section h3,
+            body.dark-mode .challenge-card h4 {
+                color: #bb86fc;
+            }
+            
+            body.dark-mode .contact-info,
+            body.dark-mode .page-number {
+                color: #9e9e9e;
+            }
+            
+            body.dark-mode .content {
+                color: #e0e0e0;
+            }
+            
+            body.dark-mode .swot-section {
+                border-color: #424242;
+            }
+            
+            body.dark-mode .strengths { background-color: #1b5e20; }
+            body.dark-mode .weaknesses { background-color: #b71c1c; }
+            body.dark-mode .opportunities { background-color: #0d47a1; }
+            body.dark-mode .threats { background-color: #f57f17; }
+            
+            body.dark-mode .challenge-section {
+                background: #2d2d2d;
+            }
+            
+            body.dark-mode .challenge-card {
+                background: #252525;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            
+            body.dark-mode .platform-section {
+                background: #2d2d2d;
+                border-left-color: #bb86fc;
+            }
+            
+            body.dark-mode .mermaid-box {
+                background: #1e1e1e;
+                border-color: #555;
+                color: #e0e0e0;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
